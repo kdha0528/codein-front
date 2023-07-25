@@ -1,0 +1,24 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.cypress-ct.json"
+    },
+  ],
+  "compilerOptions": {
+    "target": "ES6",
+    "strict": true,
+    "module": "ES6",
+    "types": [
+      "pinia-plugin-persist",
+      "./@types",
+      "./node_modules/@types",
+    ]
+  },
+}
