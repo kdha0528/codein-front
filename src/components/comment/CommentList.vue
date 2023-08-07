@@ -258,7 +258,7 @@
 <script setup lang="ts">
 import {useCommentsStore} from "@/stores/comments";
 import {useRoute, useRouter} from "vue-router";
-import Pagination from "@/components/pagination/Pagination.vue";
+import Pagination from "@/components/pagination/PaginationComponent.vue";
 import {usePageStore} from "@/stores/page";
 import {useAuthStore} from "@/stores/auth";
 import type {Comment} from "@/custom-types/comment";

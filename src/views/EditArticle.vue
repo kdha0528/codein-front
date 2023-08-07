@@ -4,8 +4,8 @@
 </template>
 
 <script setup lang="ts">
-import Header from "@/components/header/Header.vue";
-import Write from "@/components/article/Write.vue";
+import Header from "@/components/header/NavigationBar.vue";
+import Write from "@/components/article/WritePage.vue";
 </script>
 
 <style scoped lang="scss">

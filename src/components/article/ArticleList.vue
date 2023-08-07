@@ -48,7 +48,7 @@
 import {ChatDotSquare, Star} from "@element-plus/icons-vue";
 import {useArticlesStore} from "@/stores/articles";
 import {useRoute, useRouter} from "vue-router";
-import Pagination from "@/components/pagination/Pagination.vue";
+import Pagination from "@/components/pagination/PaginationComponent.vue";
 import {onMounted, ref} from "vue";
 
 const articlesStore = useArticlesStore();

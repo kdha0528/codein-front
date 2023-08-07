@@ -59,8 +59,7 @@ import {follow, getActivities} from "@/controller/api/member";
 import type {Activity} from "@/custom-types/activity";
 import {Avatar} from "@element-plus/icons-vue";
 import {useActivitiesStore} from "@/stores/activities";
-import Activities from "@/components/member/Activities.vue";
-import Pagination from "@/components/pagination/Pagination.vue";
+import Activities from "@/components/member/ActivitieList.vue";
 import {usePageStore} from "@/stores/page";
 
 const router = useRouter();

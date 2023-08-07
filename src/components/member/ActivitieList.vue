@@ -43,7 +43,7 @@
 import {useRoute, useRouter} from "vue-router";
 import {useActivitiesStore} from "@/stores/activities";
 import {onMounted, ref} from "vue";
-import Pagination from "@/components/pagination/Pagination.vue";
+import Pagination from "@/components/pagination/PaginationComponent.vue";
 
 const activitiesStore = useActivitiesStore();
 const router = useRouter();

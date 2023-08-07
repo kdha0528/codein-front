@@ -19,6 +19,7 @@
       "pinia-plugin-persist",
       "./@types",
       "./node_modules/@types",
+      "./v3-infinite-loading/types/v3-infinite-loading",
     ]
   },
 }

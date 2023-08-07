@@ -17,7 +17,7 @@
   </div>
 </template>
 <script lang="ts" setup>
-import Header from '@/components/header/Header.vue';
+import Header from '@/components/header/NavigationBar.vue';
 import { reactive, toRefs } from "vue";
 
 const state = reactive({

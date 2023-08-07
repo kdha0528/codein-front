@@ -5,7 +5,7 @@ import SettingsProfile from "@/components/member/SettingsProfile.vue";
 import SettingsAccount from "@/components/member/SettingsAccount.vue";
 import SettingsPassword from "@/components/member/SettingsPassword.vue";
 import MembersView from "@/views/MembersView.vue";
-import MemberActivities from "@/components/member/MemberActivities.vue";
+import MemberActivities from "@/components/member/MemberActivitiy.vue";
 import CategoryView from "@/views/CategoryView.vue";
 
 export default [

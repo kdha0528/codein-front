@@ -165,7 +165,7 @@ import {useAuthStore} from "@/stores/auth";
 import {useCommentsStore} from "@/stores/comments";
 import {usePageStore} from "@/stores/page";
 import type {Comment} from "@/custom-types/comment";
-import Comments from "@/components/comment/Comments.vue";
+import Comments from "@/components/comment/CommentList.vue";
 import {createCommentDummies, write} from "@/controller/api/comment";
 
 const route = useRoute();

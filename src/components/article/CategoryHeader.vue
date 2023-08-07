@@ -77,7 +77,7 @@
 
 import {onBeforeMount, onMounted, provide, reactive, ref} from "vue";
 import {useRoute, useRouter} from "vue-router";
-import Articles from "@/components/article/Articles.vue";
+import Articles from "@/components/article/ArticleList.vue";
 import {createDummies, getArticles} from "@/controller/api/article";
 import {useResponseStore} from "@/stores/Response";
 import {useAuthStore} from "@/stores/auth";

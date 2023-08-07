@@ -34,7 +34,7 @@
                         </el-icon>
                     </div>
                     <div v-if="clickedNotification" style="overflow: auto; border: none;">
-                        <Notifications/>
+                        <NotificationList />
                     </div>
                 </div>
                 <div  class="d-flex justify-content-center align-items-center" style="cursor: pointer;" @click="clickedNotification = false">
@@ -108,8 +108,7 @@ import { logout } from "@/controller/api/member";
 import {useResponseStore} from "@/stores/Response";
 import {Loading, Avatar, CloseBold, Setting} from "@element-plus/icons-vue";
 import {loadNotifications} from "@/controller/api/notificaion";
-import Notifications from "@/components/header/Notifications.vue";
-import InfiniteLoading from "v3-infinite-loading";
+import NotificationList from "@/components/header/NotificationList.vue";
 import "v3-infinite-loading/lib/style.css";
 import {useNotificationStore} from "@/stores/notifications";
 
