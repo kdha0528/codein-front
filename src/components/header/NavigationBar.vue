@@ -175,10 +175,10 @@ const onLoadNotifications = async function () {
                     if (response.notificationListItemList.length < 20) {
                         notificationStore.noMoreNotification();
                     }
-                    response.notificationListItemList.forEach((r: any) => {
-                        const notification: Notification = {...r}
+                    response.notificationListItemList?.forEach((r: any) => {
+                        const notification: Notification = {...r};
                         notificationStore.addNotification(notification);
-                    })
+                    });
                     notificationStore.finishLoading();
                 } else {
                     notificationStore.finishLoading();

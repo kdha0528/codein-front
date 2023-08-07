@@ -8,7 +8,7 @@
           class="demo-ruleForm">
           <el-form-item label="카테고리" prop="category">
               <el-select v-model="select.category" size="large" style="width:100%;">
-                  <el-option v-for="item in selectList.category" :label="item.text" :value="item.value" />
+                  <el-option v-for="item in selectList.category" :label="item.text" :value="item.value" :key="item.value"/>
               </el-select>
           </el-form-item>
           <el-form-item label="제목" prop="title">

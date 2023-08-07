@@ -266,10 +266,10 @@ const onGetArticle = async function() {
             if(resStore.isOK){
                 commentsStore.clean();
                 article.value = {...response.articleData};
-                response.commentsData.commentList.forEach((r: any) => {
-                    const comment: Comment = {...r}
+                response.commentsData.commentList?.forEach((r: any) => {
+                    const comment: Comment = {...r};
                     commentsStore.addComments(comment);
-                })
+                });
                 pageStore.setCommentsMaxPage(response.commentsData.maxPage)
                 getKoreanCategory(article.value.category);
                 commentsKey.value++;

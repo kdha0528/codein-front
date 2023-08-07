@@ -123,8 +123,8 @@ const onGetActivities = async function () {
                 memberInfo.value.imageUrl = response.imagePath;
                 memberInfo.value.isFollow = response.isFollow;
 
-                response.activityList.forEach((r: any) => {
-                    const activity: Activity = {...r}
+                response.activityList?.forEach((r: any) => {
+                    const activity: Activity = {...r};
                     activitiesStore.addActivities(activity);
                 });
                 pageStore.setArticlesMaxPage(response.maxPage);

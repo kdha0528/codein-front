@@ -36,7 +36,7 @@ export const useCommentsStore = defineStore("comments", {
         },
         hasChild(parent: Comment) {
             let response = false;
-            this.comments.forEach((c:Comment)=>{
+            this.comments?.forEach((c:Comment)=>{
                 if(c.parentId === parent.id) {
                     response = true;
                 }

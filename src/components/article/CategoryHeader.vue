@@ -45,7 +45,7 @@
                           @keyup.enter="onSearch()&onGetArticles()"
                     ><template #prepend>
                           <el-select class="select-search" v-model="search.condition" suffix-icon="">
-                              <el-option v-for="item in selectList.search" :label="item.text" :value="item.value" />
+                              <el-option v-for="item in selectList.search" :label="item.text" :value="item.value" :key="item.value"/>
                           </el-select>
                       </template>
                       <template #append>
@@ -59,10 +59,10 @@
               </div>
               <div class="sort-options">
                   <el-select class="el-select-custom" v-model="sort.period" suffix-icon="" @change="onPeriod()&onGetArticles()">
-                      <el-option class="options" v-for="item in selectList.period" :label="item.text" :value="item.value" />
+                      <el-option class="options" v-for="item in selectList.period" :label="item.text" :value="item.value" :key="item.value"/>
                   </el-select>
                   <el-select class="el-select-custom" v-model="sort.sort" suffix-icon="" @change="onSort()&onGetArticles()">
-                      <el-option class="options" v-for="item in selectList.sort" :label="item.text" :value="item.value" />
+                      <el-option class="options" v-for="item in selectList.sort" :label="item.text" :value="item.value" :key="item.value"/>
                   </el-select>
               </div>
           </div>
@@ -291,13 +291,13 @@ const getPath = function(){
     if(search.value.isSearch) {
         checkChanges.value.push('condition='+search.value.condition+'&keyword='+search.value.keyword)
     }
-    checkChanges.value.forEach((item: any) => {
-        if(item) {
+    checkChanges.value?.forEach((item: any) => {
+        if (item) {
             if (isFirst) {
-                path = path + '?' + item
-                isFirst = false
+                path = path + '?' + item;
+                isFirst = false;
             } else {
-                path = path + '&' + item
+                path = path + '&' + item;
             }
         }
     });
@@ -310,8 +310,8 @@ const onGetArticles = async function() {
         .then((response: any)=>{
             if(resStore.isOK){
                 articlesStore.clean();
-                response.articleList.forEach((r: any) => {
-                    const article: Article = {...r}
+                response.articleList?.forEach((r: any) => {
+                    const article: Article = {...r};
                     articlesStore.addArticle(article);
                 });
                 pageStore.setArticlesMaxPage(response.maxPage);
