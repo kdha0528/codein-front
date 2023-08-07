@@ -4,7 +4,7 @@ import { useResponseStore } from "@/stores/Response";
 import { useAuthStore } from "@/stores/auth";
 
 const apiController = axios.create({
-    baseURL: 'https://codein.loca.lt/my-backend-api',
+    baseURL: 'https://code-in.site/my-backend-api',
     timeout: 60000,
 });
 
